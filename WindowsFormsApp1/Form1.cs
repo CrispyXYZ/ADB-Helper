@@ -32,8 +32,9 @@ namespace ADB_Helper
             Label lbl = new Label
             {
                 Size = formRet.Size,
-                Text = ret
-            };
+                Text = ret,
+                Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)))
+        };
             formRet.Controls.Add(lbl);
 			formRet.Show();
         }
