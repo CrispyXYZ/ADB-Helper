@@ -37,6 +37,10 @@ namespace ADB_Helper
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Button1 = new System.Windows.Forms.Button();
+            this.Button2 = new System.Windows.Forms.Button();
+            this.TextBox1 = new System.Windows.Forms.TextBox();
+            this.Button3 = new System.Windows.Forms.Button();
+            this.Button4 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +69,7 @@ namespace ADB_Helper
             this.设置ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripTextBox1});
             this.设置ToolStripMenuItem.Name = "设置ToolStripMenuItem";
-            this.设置ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.设置ToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.设置ToolStripMenuItem.Text = "设置...";
             // 
             // toolStripTextBox1
@@ -79,7 +83,7 @@ namespace ADB_Helper
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
@@ -108,11 +112,56 @@ namespace ADB_Helper
             this.Button1.UseVisualStyleBackColor = true;
             this.Button1.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // Button2
+            // 
+            this.Button2.Location = new System.Drawing.Point(158, 28);
+            this.Button2.Name = "Button2";
+            this.Button2.Size = new System.Drawing.Size(140, 45);
+            this.Button2.TabIndex = 2;
+            this.Button2.Text = "列出已连接的设备";
+            this.Button2.UseVisualStyleBackColor = true;
+            this.Button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
+            // TextBox1
+            // 
+            this.TextBox1.Enabled = false;
+            this.TextBox1.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox1.Location = new System.Drawing.Point(12, 94);
+            this.TextBox1.MaxLength = 65565;
+            this.TextBox1.Multiline = true;
+            this.TextBox1.Name = "TextBox1";
+            this.TextBox1.Size = new System.Drawing.Size(776, 344);
+            this.TextBox1.TabIndex = 3;
+            // 
+            // Button3
+            // 
+            this.Button3.Location = new System.Drawing.Point(304, 28);
+            this.Button3.Name = "Button3";
+            this.Button3.Size = new System.Drawing.Size(140, 44);
+            this.Button3.TabIndex = 4;
+            this.Button3.Text = "启动ADB服务";
+            this.Button3.UseVisualStyleBackColor = true;
+            this.Button3.Click += new System.EventHandler(this.Button3_Click);
+            // 
+            // Button4
+            // 
+            this.Button4.Location = new System.Drawing.Point(450, 29);
+            this.Button4.Name = "Button4";
+            this.Button4.Size = new System.Drawing.Size(140, 44);
+            this.Button4.TabIndex = 5;
+            this.Button4.Text = "关闭ADB服务";
+            this.Button4.UseVisualStyleBackColor = true;
+            this.Button4.Click += new System.EventHandler(this.Button4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Button4);
+            this.Controls.Add(this.Button3);
+            this.Controls.Add(this.TextBox1);
+            this.Controls.Add(this.Button2);
             this.Controls.Add(this.Button1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -135,6 +184,10 @@ namespace ADB_Helper
         private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.Button Button1;
+        private System.Windows.Forms.Button Button2;
+        private System.Windows.Forms.TextBox TextBox1;
+        private System.Windows.Forms.Button Button3;
+        private System.Windows.Forms.Button Button4;
     }
 }
 

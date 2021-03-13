@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Text;
 using System.Windows.Forms;
 
 namespace ADB_Helper
@@ -23,20 +24,7 @@ namespace ADB_Helper
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            string ret = Execute("adb version");
-            Form formRet = new Form
-            {
-                Text = this.Text,
-                Size = this.Size
-            };
-            Label lbl = new Label
-            {
-                Size = formRet.Size,
-                Text = ret,
-                Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)))
-        };
-            formRet.Controls.Add(lbl);
-			formRet.Show();
+            TextBox1.Text = Execute("adb version");
         }
 
 		/// <summary>   
@@ -56,6 +44,9 @@ namespace ADB_Helper
                     UseShellExecute = false,//不使用系统外壳程序启动   
                     RedirectStandardInput = true,//重定向输入   
                     RedirectStandardOutput = true, //重定向输出   
+                    StandardOutputEncoding = Encoding.UTF8,
+                    StandardErrorEncoding = Encoding.UTF8,
+                    RedirectStandardError = true,
                     CreateNoWindow = true//不创建窗口   
                 };
                 Process process = new Process
@@ -64,9 +55,25 @@ namespace ADB_Helper
                 };//创建进程对象   
                 process.Start();
 				output = process.StandardOutput.ReadToEnd();
+                output += process.StandardError.ReadToEnd();
 				process.Close();
 			}
 			return output;
 		}
-	}
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            TextBox1.Text = Execute("adb devices");
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            TextBox1.Text = Execute("adb start-server");
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            TextBox1.Text = Execute("adb kill-server");
+        }
+    }
 }
