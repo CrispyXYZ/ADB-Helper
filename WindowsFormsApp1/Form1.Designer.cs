@@ -41,6 +41,7 @@ namespace ADB_Helper
             this.TextBox1 = new System.Windows.Forms.TextBox();
             this.Button3 = new System.Windows.Forms.Button();
             this.Button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -131,33 +132,45 @@ namespace ADB_Helper
             this.TextBox1.Multiline = true;
             this.TextBox1.Name = "TextBox1";
             this.TextBox1.Size = new System.Drawing.Size(776, 344);
-            this.TextBox1.TabIndex = 3;
+            this.TextBox1.TabIndex = 7;
+            this.TextBox1.TabStop = false;
             // 
             // Button3
             // 
             this.Button3.Location = new System.Drawing.Point(304, 28);
             this.Button3.Name = "Button3";
-            this.Button3.Size = new System.Drawing.Size(140, 44);
-            this.Button3.TabIndex = 4;
+            this.Button3.Size = new System.Drawing.Size(140, 45);
+            this.Button3.TabIndex = 3;
             this.Button3.Text = "启动ADB服务";
             this.Button3.UseVisualStyleBackColor = true;
             this.Button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // Button4
             // 
-            this.Button4.Location = new System.Drawing.Point(450, 29);
+            this.Button4.Location = new System.Drawing.Point(450, 28);
             this.Button4.Name = "Button4";
-            this.Button4.Size = new System.Drawing.Size(140, 44);
-            this.Button4.TabIndex = 5;
+            this.Button4.Size = new System.Drawing.Size(140, 45);
+            this.Button4.TabIndex = 4;
             this.Button4.Text = "关闭ADB服务";
             this.Button4.UseVisualStyleBackColor = true;
             this.Button4.Click += new System.EventHandler(this.Button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(596, 28);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(140, 45);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "连接…";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.Button4);
             this.Controls.Add(this.Button3);
             this.Controls.Add(this.TextBox1);
@@ -188,6 +201,7 @@ namespace ADB_Helper
         private System.Windows.Forms.TextBox TextBox1;
         private System.Windows.Forms.Button Button3;
         private System.Windows.Forms.Button Button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 
