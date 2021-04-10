@@ -42,6 +42,11 @@ namespace ADB_Helper
             this.Button3 = new System.Windows.Forms.Button();
             this.Button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +57,7 @@ namespace ADB_Helper
             this.帮助ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(748, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -127,12 +132,12 @@ namespace ADB_Helper
             // 
             this.TextBox1.Enabled = false;
             this.TextBox1.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox1.Location = new System.Drawing.Point(12, 94);
+            this.TextBox1.Location = new System.Drawing.Point(12, 130);
             this.TextBox1.MaxLength = 65565;
             this.TextBox1.Multiline = true;
             this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Size = new System.Drawing.Size(776, 344);
-            this.TextBox1.TabIndex = 7;
+            this.TextBox1.Size = new System.Drawing.Size(724, 308);
+            this.TextBox1.TabIndex = 0;
             this.TextBox1.TabStop = false;
             // 
             // Button3
@@ -165,11 +170,65 @@ namespace ADB_Helper
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(596, 79);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(140, 45);
+            this.button6.TabIndex = 10;
+            this.button6.Text = "开发中…";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(450, 79);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(140, 45);
+            this.button7.TabIndex = 9;
+            this.button7.Text = "模拟远程控制";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(304, 79);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(140, 45);
+            this.button8.TabIndex = 8;
+            this.button8.Text = "shell命令行";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(158, 79);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(140, 45);
+            this.button9.TabIndex = 7;
+            this.button9.Text = "重启…";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.Button9_Click);
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(12, 79);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(140, 45);
+            this.button10.TabIndex = 6;
+            this.button10.Text = "传输文件…";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.Button10_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(748, 450);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.button10);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.Button4);
             this.Controls.Add(this.Button3);
@@ -202,6 +261,11 @@ namespace ADB_Helper
         private System.Windows.Forms.Button Button3;
         private System.Windows.Forms.Button Button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
     }
 }
 
